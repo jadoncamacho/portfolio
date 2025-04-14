@@ -7,8 +7,8 @@
 .app {
   min-height: 100vh;
   width: 100vw;
-  background-color: #121212;
-  color: white;
+  background-color: var(--base);
+  color: var(--text);
   display: flex;
   overflow-x: hidden;
 }
@@ -16,12 +16,13 @@
 .sidebar {
   width: 33.333%;
   min-width: 33.333%;
-  background-color: #1a1a1a;
+  background-color: var(--surface);
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
   overflow-y: auto;
+  border-right: 1px solid var(--highlight-low);
 }
 
 .main-content {
@@ -29,10 +30,86 @@
   margin-left: 33.333%;
   min-height: 100vh;
   padding: 2rem;
-  background-color: #121212;
+  background-color: var(--base);
   overflow-y: auto;
 }
 
+/* Update Sidebar component styles */
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 2rem;
+}
+
+.profile-section {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--highlight-low);
+}
+
+.profile-section h2 {
+  color: var(--pine);
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+.profile-section p {
+  color: var(--subtle);
+}
+
+.nav-links {
+  flex-grow: 1;
+}
+
+.nav-links button {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  color: var(--text);
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.nav-links button:hover {
+  background-color: var(--highlight-low);
+  color: var(--pine);
+}
+
+.social-links {
+  padding-top: 2rem;
+  border-top: 1px solid var(--highlight-low);
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.social-links a {
+  color: var(--iris);
+  transition: color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.social-links a:hover {
+  color: var(--love);
+  transform: translateY(-2px);
+}
+
+/* Optional: Special styling for resume link */
+.social-links .resume-link {
+  color: var(--pine); /* Different color to distinguish it */
+}
+
+.social-links .resume-link:hover {
+  color: var(--rose); /* Different hover color */
+}
+
+/* Section styles */
 .section {
   min-height: 100vh;
   display: flex;
@@ -40,6 +117,18 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+.section h1 {
+  color: var(--pine);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.section h2 {
+  color: var(--rose);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -52,6 +141,7 @@
     transform: translateX(-100%);
     transition: transform 0.3s ease;
     z-index: 1000;
+    background-color: var(--surface);
   }
 
   .sidebar.open {
@@ -65,3 +155,17 @@
 }
 
 /* ... rest of the CSS remains the same ... */
+
+.main-content img {
+  max-width: 300px; /* or whatever size you prefer */
+  height: auto;
+  object-fit: cover;
+}
+
+/* If the image is in a specific container or has a specific class, you can be more specific: */
+.profile-image img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px; /* optional: for rounded corners */
+}

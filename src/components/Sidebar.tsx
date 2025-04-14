@@ -1,3 +1,4 @@
+import { FaGithub, FaLinkedin, FaFileAlt } from 'react-icons/fa';
 import { useState } from 'react';
 import './Sidebar.css';
 
@@ -32,7 +33,7 @@ const Sidebar = () => {
           <div className="profile-image">
             <img src="/your-profile-photo.jpg" alt="Profile" />
           </div>
-          <h2>Your Name</h2>
+          <h2>Jadon Camacho</h2>
           <p>Web Developer</p>
         </div>
 
@@ -49,11 +50,30 @@ const Sidebar = () => {
         </nav>
 
         <div className="social-links">
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
-            GitHub
+          <a
+            href="https://github.com/jadoncamacho"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub Profile"
+          >
+            <FaGithub size={24} />
           </a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
-            LinkedIn
+          <a
+            href="https://linkedin.com/in/jadon-camacho"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn Profile"
+          >
+            <FaLinkedin size={24} />
+          </a>
+          <a
+            href="/path-to-your-resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Download Resume"
+            className="resume-link"
+          >
+            <FaFileAlt size={24} />
           </a>
         </div>
       </div>

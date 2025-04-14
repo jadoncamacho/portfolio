@@ -7,6 +7,7 @@ function App() {
       <Sidebar />
       <main className="main-content">
         <section id="home" className="section">
+          <img src="public/image.png" alt="Profile" />
           <h1>Welcome to My Portfolio</h1>
         </section>
 
