@@ -1,24 +1,32 @@
-import { useState } from 'react'
 import './App.css'
+import Sidebar from './components/Sidebar'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <h1>Jadon's Portfolio</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="app">
+      <Sidebar />
+      <main className="main-content">
+        <section id="home" className="section">
+          <h1>Welcome to My Portfolio</h1>
+        </section>
+
+        <section id="about" className="section">
+          <h2>About Me</h2>
+        </section>
+
+        <section id="projects" className="section">
+          <h2>My Projects</h2>
+        </section>
+
+        <section id="skills" className="section">
+          <h2>Skills</h2>
+        </section>
+
+        <section id="contact" className="section">
+          <h2>Contact Me</h2>
+        </section>
+      </main>
+    </div>
   )
 }
 

@@ -66,3 +66,8 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem; /* Adjusts scroll position to account for any fixed headers */
+}
