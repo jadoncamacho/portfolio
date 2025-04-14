@@ -18,21 +18,19 @@
   min-width: 33.333%;
   background-color: #1a1a1a;
   height: 100vh;
-  border: 2px solid white;
-  position: fixed; /* Make sidebar fixed */
+  position: fixed;
   top: 0;
   left: 0;
-  overflow-y: auto; /* Allow scrolling within sidebar if content is too tall */
+  overflow-y: auto;
 }
 
 .main-content {
   flex: 1;
-  margin-left: 33.333%; /* Offset for fixed sidebar */
+  margin-left: 33.333%;
   min-height: 100vh;
   padding: 2rem;
   background-color: #121212;
-  border: 2px solid white;
-  overflow-y: auto; /* Allow scrolling in main content */
+  overflow-y: auto;
 }
 
 .section {
