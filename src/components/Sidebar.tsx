@@ -30,7 +30,7 @@ const Sidebar = () => {
       <div className="sidebar-content">
         <div className="profile-section">
           <div className="profile-image">
-            <img src="public/image.png" alt="Profile" />
+            <img src="./image.png" alt="Profile" />
           </div>
           <h2>Jadon Camacho</h2>
           <p>San Mateo, CA</p>
