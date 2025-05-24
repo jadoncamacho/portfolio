@@ -7,24 +7,37 @@ function App() {
       <Sidebar />
       <main className="main-content">
         <section id="home" className="section">
-          <img src="./image.png" alt="Profile" />
-          <h1>Welcome to My Portfolio</h1>
+          <h1>Hello!</h1>
+          <h1>
+            I am Jadon Camacho, a Computer Science student at San Jose State University and aspiring front end developer! 
+            Here you can see my work and learn more about me.
+          </h1>
         </section>
 
         <section id="about" className="section">
           <h2>About Me</h2>
+          <h3>
+            Currently, I am a student at SJSU looking to complete a Bachelor of Science in Computer Science this coming Fall 2025, and I have a previous education
+            in computer science topics from the College of San Mateo. During my time in San Jose, I studied the basics of a variety of topics including: Software
+            Development, Operating Systems, Machine Learning, Mobile Device Development, Database Management, and more. Throughout my education I have developed a 
+            particular passion for UX and UI design and I hope to continue to grow my knowledge of these fields and provide blissful experiences for users.
+          </h3>
+        </section>
+
+        <section id="interests" className="section">
+          <h2>Interests</h2>
+          <h3>
+            I am a passionate community member of multiple esports with a particular interest in fighting games. Tekken, Street Fighter, and Super Smash Bros. Melee
+            are some of the titles that I have been involved with. I strive to use technology to further build communities and provide fluid digital experiences for
+            community members and anyone interested in getting involved!
+          </h3>
         </section>
 
         <section id="projects" className="section">
           <h2>My Projects</h2>
-        </section>
-
-        <section id="skills" className="section">
-          <h2>Skills</h2>
-        </section>
-
-        <section id="contact" className="section">
-          <h2>Contact Me</h2>
+          <h3>
+            Take a look at some of the projects I have been working on!
+          </h3>
         </section>
       </main>
     </div>

@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaFileAlt } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaFileAlt, FaEnvelope} from 'react-icons/fa';
 import { useState } from 'react';
 import './Sidebar.css';
 
@@ -10,9 +10,8 @@ interface NavItem {
 const navItems: NavItem[] = [
   { title: 'Home', sectionId: 'home' },
   { title: 'About', sectionId: 'about' },
-  { title: 'Projects', sectionId: 'projects' },
-  { title: 'Skills', sectionId: 'skills' },
-  { title: 'Contact', sectionId: 'contact' },
+  {title: 'Interests', sectionId: 'interests'},
+  { title: 'Projects', sectionId: 'projects' }
 ];
 
 const Sidebar = () => {
@@ -31,10 +30,10 @@ const Sidebar = () => {
       <div className="sidebar-content">
         <div className="profile-section">
           <div className="profile-image">
-            <img src="/your-profile-photo.jpg" alt="Profile" />
+            <img src="public/image.png" alt="Profile" />
           </div>
           <h2>Jadon Camacho</h2>
-          <p>Web Developer</p>
+          <p>San Mateo, CA</p>
         </div>
 
         <nav className="nav-links">
@@ -50,6 +49,17 @@ const Sidebar = () => {
         </nav>
 
         <div className="social-links">
+          <h2>
+            Connect With Me:
+          </h2>
+          <a
+            href="mailto:jadon.camacho@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Email"
+          >
+            <FaEnvelope size={24} />
+          </a>
           <a
             href="https://github.com/jadoncamacho"
             target="_blank"
@@ -67,7 +77,7 @@ const Sidebar = () => {
             <FaLinkedin size={24} />
           </a>
           <a
-            href="/path-to-your-resume.pdf"
+            href="public/jadon-camacho-resume-2025.pdf"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Download Resume"
