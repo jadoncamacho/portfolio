@@ -16,20 +16,16 @@ function App() {
 
         <section id="about" className="section">
           <h2>About Me</h2>
-          <h3>
+          <h3> 
             Currently, I am a student at SJSU looking to complete a Bachelor of Science in Computer Science this coming Fall 2025, and I have a previous education
             in computer science topics from the College of San Mateo. During my time in San Jose, I studied the basics of a variety of topics including: Software
             Development, Operating Systems, Machine Learning, Mobile Device Development, Database Management, and more. Throughout my education I have developed a 
             particular passion for UX and UI design and I hope to continue to grow my knowledge of these fields and provide blissful experiences for users.
           </h3>
-        </section>
-
-        <section id="interests" className="section">
-          <h2>Interests</h2>
           <h3>
-            I am a passionate community member of multiple esports with a particular interest in fighting games. Tekken, Street Fighter, and Super Smash Bros. Melee
-            are some of the titles that I have been involved with. I strive to use technology to further build communities and provide fluid digital experiences for
-            community members and anyone interested in getting involved!
+            In my free time I am deepy involved with the fighting game esports scene. In particular I am a passionate member of the Tekken, Street Fighter, and Super 
+            Smash Bros. Melee communities. I strive to use technology to further build communities and provide fluid digital experiences for community members and 
+            anyone interested in getting involved!
           </h3>
         </section>
 

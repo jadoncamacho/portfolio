@@ -10,7 +10,6 @@ interface NavItem {
 const navItems: NavItem[] = [
   { title: 'Home', sectionId: 'home' },
   { title: 'About', sectionId: 'about' },
-  {title: 'Interests', sectionId: 'interests'},
   { title: 'Projects', sectionId: 'projects' }
 ];
 
@@ -77,7 +76,7 @@ const Sidebar = () => {
             <FaLinkedin size={24} />
           </a>
           <a
-            href="public/jadon-camacho-resume-2025.pdf"
+            href="./jadon-camacho-resume-2025.pdf"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Download Resume"
