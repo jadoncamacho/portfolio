@@ -1,0 +1,33 @@
+
+.nav-links {
+    display: none;
+}
+
+.sidebar.open .nav-links {
+    display: block;
+}
+
+.social-links {
+    margin-top: auto;
+}
+
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translateX(-100%);
+    z-index: 1000;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+}

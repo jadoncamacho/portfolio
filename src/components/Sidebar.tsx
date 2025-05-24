@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaFileAlt, FaEnvelope} from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaFileAlt, FaEnvelope, FaBars} from 'react-icons/fa';
 import { useState } from 'react';
 import './Sidebar.css';
 
@@ -20,7 +20,6 @@ const Sidebar = () => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
-      setIsMobileMenuOpen(false);
     }
   };
 
@@ -35,17 +34,27 @@ const Sidebar = () => {
           <p>San Mateo, CA</p>
         </div>
 
-        <nav className="nav-links">
-          <ul>
-            {navItems.map((item) => (
-              <li key={item.sectionId}>
-                <button onClick={() => scrollToSection(item.sectionId)}>
-                  {item.title}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        <div className="nav-section">
+          <a
+            className="hamburger"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle Menu"
+          >
+            <FaBars size={24} />
+          </a>
+
+          <nav className="nav-links">
+            <ul>
+              {navItems.map((item) => (
+                <li key={item.sectionId}>
+                  <button onClick={() => scrollToSection(item.sectionId)}>
+                    {item.title}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
 
         <div className="social-links">
           <h2>
