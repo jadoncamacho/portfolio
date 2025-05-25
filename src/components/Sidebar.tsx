@@ -1,6 +1,7 @@
 import { FaGithub, FaLinkedin, FaFileAlt, FaEnvelope, FaBars} from 'react-icons/fa';
 import { useState } from 'react';
 import './Sidebar.css';
+import profileImage from '/home/juma/coding/portfolio/public/image.png';
 
 interface NavItem {
   title: string;
@@ -28,26 +29,28 @@ const Sidebar = () => {
       <div className="sidebar-content">
         <div className="profile-section">
           <div className="profile-image">
-            <img src="./image.png" alt="Profile" />
+            <img src={profileImage} alt="Profile" />
           </div>
           <h2>Jadon Camacho</h2>
           <p>San Mateo, CA</p>
         </div>
 
         <div className="nav-section">
-          <a
-            className="hamburger"
+          <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle Menu"
           >
             <FaBars size={24} />
-          </a>
+          </button>
 
           <nav className="nav-links">
             <ul>
               {navItems.map((item) => (
                 <li key={item.sectionId}>
-                  <button onClick={() => scrollToSection(item.sectionId)}>
+                  <button 
+                    onClick={() => scrollToSection(item.sectionId)}
+                    aria-label="Main Navigation"
+                  >
                     {item.title}
                   </button>
                 </li>
