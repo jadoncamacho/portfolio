@@ -20,7 +20,7 @@ function App() {
             Currently, I am a student at SJSU looking to complete a Bachelor of Science in Computer Science this coming Fall 2025, and I have a previous education
             in computer science topics from the College of San Mateo. During my time in San Jose, I studied the basics of a variety of topics including: Software
             Development, Operating Systems, Machine Learning, Mobile Device Development, Database Management, and more. Throughout my education I have developed a 
-            particular passion for UX and UI design and I hope to continue to grow my knowledge of these fields and provide blissful experiences for users.
+            particular passion for software development and I hope to continue to grow my knowledge of these fields and provide blissful experiences for users.
           </h3>
           <h3>
             In my free time I am deepy involved with the fighting game esports scene. In particular I am a passionate member of the Tekken, Street Fighter, and Super 
